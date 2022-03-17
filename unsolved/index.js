@@ -11,13 +11,27 @@ var countWins = document.getElementById('wins');
 var userLosses = document.getElementById('losses');
 
 // target all .box elements and attach a click event listener to each one using a loop
+var allBoxes = document.querySelectorAll('box');
+
+allBoxes.forEach(function(box) {
+    box.onclick = clickListen;
+})
 
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
 // convert that value to a Number and store it to a variable
+function clickListen(event) {
+    var clickedBox = event.target.textContent();
+    var newCB = parseInt(clickedBox);
+}
+
 
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
+
+function randomNumber() {
+    var winningBox = Math.floor(Math.random() * 4);
+}
 
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
