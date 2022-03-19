@@ -24,7 +24,7 @@ allBoxes.forEach(function(box) {
 // This number will represent the winning box
 
 function clickListen(event) {
-    var clickedBox = event.target.textContent();
+    var clickedBox = event.target.textContent;
     var newCB = parseInt(clickedBox);
     function randomNumber() {
         var winningBox = Math.floor(Math.random() * 3) + 1;
