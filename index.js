@@ -26,8 +26,7 @@ allBoxes.forEach(function(box) {
 function clickListen(event) {
     var clickedBox = event.target.textContent;
     var newCB = parseInt(clickedBox);
-    function randomNumber() {
-        var winningBox = Math.floor(Math.random() * 3) + 1;
+    var winningBox = Math.floor(Math.random() * 3) + 1;
 
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
