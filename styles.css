@@ -1,11 +1,91 @@
 :root {
-  --primary-color: #6003C3;
-  --white: #FFFFFF;
-  --box-color-1: #FCFF00;
-  --box-color-2: #57FFC9;
-  --box-color-3: #A5FF01;
+  --primary-color: #6003c3;
+  --white: #ffffff;
+  --box-color-1: #fcff00;
+  --box-color-2: #57ffc9;
+  --box-color-3: #a5ff01;
 }
 
 body {
-  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-family: "Bebas Neue", Impact, sans-serif;
+  margin: 0;
 }
+
+header {
+  background-color: #6003c3;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#message, #score {
+  font-size: 2em;
+  text-align: center;
+  color: #6003c3;
+  padding: 25px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+div#box-1 {
+  border: 1rem solid #6003c3;
+  border-radius: 5px;
+  background-color: #fcff00;
+  font-size: 8em;
+  color: #6003c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  box-shadow: 12px 12px 2px 1px #999;
+}
+
+div#box-2 {
+  border: 1rem solid #6003c3;
+  border-radius: 5px;
+  background-color: #57ffc9;
+  font-size: 8em;
+  color: #6003c3;
+  box-shadow: 12px 12px 2px 1px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+
+}
+
+div#box-3 {
+  border: 1rem solid #6003c3;
+  border-radius: 5px;
+  background-color: #a5ff01;
+  font-size: 8em;
+  color: #6003c3;
+  box-shadow: 12px 12px 2px 1px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+
+
