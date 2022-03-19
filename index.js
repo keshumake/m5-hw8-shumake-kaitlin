@@ -34,7 +34,7 @@ function clickListen(event) {
 // if the numbers match, increment wins and display the win count in div#wins
         if (newCB === winningBox) {
             countWins++;
-            document.getElementById('message').textContent('Congratulations!'));
+            document.getElementById('message').textContent('Congratulations!');
             document.getElementById('wins').innerHTML(`Wins: ${countWins}`);
         }
 
