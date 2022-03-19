@@ -11,7 +11,7 @@ var countWins = document.getElementById('wins');
 var userLosses = document.getElementById('losses');
 
 // target all .box elements and attach a click event listener to each one using a loop
-var allBoxes = document.querySelectorAll('box');
+var allBoxes = document.querySelectorAll('.box');
 
 allBoxes.forEach(function(box) {
     box.onclick = clickListen;
