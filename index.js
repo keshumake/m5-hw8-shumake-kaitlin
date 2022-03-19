@@ -34,17 +34,15 @@ function clickListen(event) {
         if (newCB === winningBox) {
             countWins++;
             document.getElementById('message').textContent('Congratulations!');
-            document.getElementById('wins').innerHTML(`Wins: ${countWins}`);
+            document.getElementById('wins').innerHTML = `Wins: ${countWins}`;
         }
 
 // if the numbers don't match, change the div#message element's text to a random losing message from the array above
 // if the numbers don't match, increment losses and display the loss count in div#losses
         else if (newCB != winningBox) {
             userLosses++;
-            document.getElementById('losses').innerHTML(`Losses: ${userLosses}`);
+            document.getElementById('losses').innerHTML = `Losses: ${userLosses}`;
             const randomMessage = Math.floor(Math.random(losingMessage) * 3)
             document.getElementById('message').innerHTML = losingMessage[randomMessage];
         };
     }
-    
-};
