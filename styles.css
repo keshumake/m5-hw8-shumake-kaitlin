@@ -31,7 +31,7 @@ main {
   flex-direction: column;
 }
 
-#message, #score {
+#message, #score, #wins, #losses {
   font-size: 2em;
   text-align: center;
   color: #6003c3;
