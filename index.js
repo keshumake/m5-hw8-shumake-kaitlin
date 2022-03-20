@@ -32,16 +32,16 @@ function clickListen(event) {
 // if the numbers match, display a winning message by changing the text content of the div#message element
 // if the numbers match, increment wins and display the win count in div#wins
         if (newCB === winningBox) {
-            countWins++;
+            wins++;
             document.getElementById('message').textContent = 'Congratulations!';
-            document.getElementById('wins').innerHTML = `Wins: ${countWins}`;
+            document.getElementById('wins').textContent = "Wins: " + wins;
         }
 
 // if the numbers don't match, change the div#message element's text to a random losing message from the array above
 // if the numbers don't match, increment losses and display the loss count in div#losses
         else if (newCB != winningBox) {
-            userLosses++;
-            document.getElementById('losses').innerHTML = `Losses: ${userLosses}`;
+            losses++;
+            document.getElementById('losses').textContent = "Losses: " + losses;
             const randomMessage = Math.floor(Math.random(losingMessage) * 3)
             document.getElementById('message').innerHTML = losingMessage[randomMessage];
         };
