@@ -72,3 +72,8 @@ Additional MDN Resources:
 - [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 - [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick)
 - [Event.target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
+
+
+## Comments
+I had trouble working through the programming of the game, initially I could not get anything to happen but it turns out I was using the wrong ID to attach the event listener. 
+Once that error was fixed, I was getting a "NaN" errror for the wins and losses.
